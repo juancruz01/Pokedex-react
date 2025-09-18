@@ -1,13 +1,22 @@
+import { useState } from "react";
 import Header from "../components/Header";
+/*
+Esto va a funcionar como pagina principal
+*/
 
 const Pokemons = () =>{
+
+    /* Es lo que que es consultal el nombre ingresado(query) por el input para obtener los datos del pokemon */
+    const [query, setQuery] = useState("BULBASUR");
+
+
     return(
         <>
-            <Header />
+            <Header query={query} setQuery={setQuery} />
             <main>
                 <h1>Pokemons</h1>
-                <footer>Footer</footer>
             </main>
+            <footer>Footer</footer>
 
         </>
     );
