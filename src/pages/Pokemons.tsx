@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Header from "../components/Header";
+import Footer from "../components/Footer"
 /*
 Esto va a funcionar como pagina principal
 */
@@ -16,7 +17,7 @@ const Pokemons = () =>{
             <main>
                 <h1>Pokemons</h1>
             </main>
-            <footer>Footer</footer>
+            <Footer />
 
         </>
     );
