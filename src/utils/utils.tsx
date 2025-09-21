@@ -1,3 +1,4 @@
+
 export function formatPokemonName(name: string): string {
   if (name.includes("♂")) {
     return name.replace("♂", "-m");
@@ -8,4 +9,8 @@ export function formatPokemonName(name: string): string {
   } else if (name.includes("farfetch'd")) {
     return name.replace("farfetch'd", "farfetchd");
   } else return name;
+}
+
+export function waitFor(time: number): Promise<void>{
+  return new Promise((resolve) => setTimeout(resolve, time))
 }
