@@ -11,7 +11,6 @@ export async function fetchPokemons(): Promise<Pokemon[]> {
     }
 
     const data = await response.json();
-    console.log(data);
 
     const pokemons = data.results.map((pokemon : any) => ({
         name: pokemon.name,
